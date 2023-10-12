@@ -28,3 +28,9 @@ class Automovil(Transporte,ABC,Vehiculo):
         print("volando")
         pass  # No se puede volar en un automóvil
   
+    def datos(self):
+      if self.ruedas==4:
+        return print("automovil:",{"modelo:",self.__modelo},{" ruedas:",self.ruedas})
+      else:
+        if self.ruedas==6:
+           return print("automovil volador:",{"modelo:",self.__modelo},{" ruedas:",self.ruedas})
